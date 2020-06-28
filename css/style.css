@@ -1,0 +1,280 @@
+@font-face 
+{
+    font-family: Helvetica; 
+    src: url(fonts/9202.otf); 
+}
+
+/***ADAPTATЕ***/
+
+/*Адаптация под IPHONE X*//*не работает
+@media screen and (max-width: 375px)
+{
+   .social
+   { 
+   	display: none;
+   }
+   .nav_bar,.hi_text,.profile_elements,.portfolio_columns
+   {
+   	width: 300px;
+   }
+   header
+   {
+   	height: 76px;
+   }
+
+}
+*/
+
+
+/**HEADER*****************************************************************************/
+header
+{
+	font-family: Helvetica;
+	color: white;
+	background: black;
+	height: 36px;
+	width: 100%; 
+}
+/****HEADER_ICONS***/
+.social
+{
+	position: absolute;
+	right: 166px;
+	top: 18px;
+}
+.social_margin
+{
+	margin-left: 10px;
+}
+.logo
+{
+	position: absolute;
+}
+
+/***NAV***/
+.container
+{
+	height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_bar
+{
+	display: flex;	
+	width: 1280px;
+}
+
+.nav_item
+{
+	display: flex;
+	align-items: center; 
+	margin-left: 35px;
+	font-size: 17px;	
+}
+.nav_item a
+{
+	color: white;
+}
+.nav_item a:hover
+{
+	opacity: 0.5;
+	transition: opacity 1s;
+}
+.first_nav_item
+{
+	margin-left: 153px;
+}
+.nav_item_border
+{
+    border-right: 2px solid white;
+    padding-right: 35px;     
+}
+
+/*MAIN***********************************************************************************************/
+
+/***BLOCK_1  HI THERE****/
+.hi
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 64px;
+	color: black;
+	
+}
+.hi h1
+{
+	font-size: 24px;
+	margin-left: 152px;
+}
+
+.hi_text
+{
+	display: flex;
+	width: 1280px;
+}
+
+/***BLOCK_2   BACKGROUND PIC*******/
+
+.promo
+{
+	background: url('../img/promo.png') no-repeat;
+	height: 278px;
+	width: 100%;
+	background-size: 100% 100%;
+}
+
+/***Block_3  PROFILE***/
+
+.profile
+{
+	display: flex;
+	justify-content: center;
+    margin-bottom: 40px;
+
+}
+.profile_elements
+{
+	display: flex;   
+	width: 1280px;
+	height: 64px;
+}
+/**/
+.avatar
+{
+	display: flex;
+	position: absolute;
+	top: 266px;
+}
+.about
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 200px;
+	margin-top: 17px;
+	width: 262px;
+	line-height: 25px;
+}
+.name
+{
+	font-weight: bold;
+	font-size: 24px;
+}
+.info
+{
+	font-size: 17px;
+	font-weight: 500;
+}
+
+/**BLOCK_4    Portfolio***/
+.container_new
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	height: 258px;
+}
+.portfolio_columns
+{	
+	margin-top: 45px;
+	width: 1280px;
+	display: flex;
+    justify-content: space-between;
+
+}
+.portfolio_columns h2
+{
+	font-weight: bold;
+}
+/***First column of portfolio***/
+.column1
+{
+width: 38%;
+display: flex;
+flex-direction: column;
+}
+.column1_text
+{
+	line-height: 23px;
+	font-family: Helvetica;
+}
+.column1_text h2
+{
+	font-size: 24px;
+}
+
+/**Second column of portfolio***/
+.column2
+{
+ width: 60%;
+ display: flex;
+ font-family: Helvetica;
+ 
+}
+.column2_elements
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+}
+.column2_elements h2
+{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+/****** All columns setting*******/
+.allcolumns
+{
+	display: flex;
+	flex-direction: row;
+    
+}
+.columns_row
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.first_column_element,.second_column_element,.third_column_element
+{
+	display: flex;
+	flex-direction: column;
+    margin-right: 25px;
+}
+.first_column_element img,.second_column_element img,.third_column_element img
+{
+	margin-bottom: 15px;
+}
+.first_column_element img:hover,.second_column_element img:hover,.third_column_element img:hover
+{
+	opacity: 0.5;
+	transition: opacity 1.5s;
+}
+
+
+/*FOOTER***********************************************************************************************/
+footer
+{
+	background: white;
+	border-top: 2px solid lightgray;
+	text-align: center;
+	font-weight: bold;
+	color: #585555;
+	line-height: 20px;
+
+	position: fixed; 
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    font-family: Helvetica;
+}
+.footer_margin
+{
+   margin-top: 17px;
+   margin-bottom: 17px;
+}
+
+
+
+
